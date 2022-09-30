@@ -14,6 +14,54 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_spender",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "account",
 						"type": "address"
 					}
@@ -40,6 +88,19 @@
 				"name": "blackList",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -117,6 +178,35 @@
 				],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -147,11 +237,11 @@
 	},
 	"sources": {
 		"ERC20.sol": {
-			"keccak256": "0xc09843ce65c825a8583d75ff40809b83bc09888a45993e65304d2648b576d64a",
+			"keccak256": "0x134beae859c1ec46a4eab86ea9eb009a15acf201ee65a85f5b4209630ff13683",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7e146539f23cd82156bbf0484406b7c7eaacc50b1e01fd46d4a479c2fc03b449",
-				"dweb:/ipfs/QmbQU86HxoNdU4izxRWKz45qhyUQTyv81SqY2RH8gDKGfn"
+				"bzz-raw://424c652785cc4af7b44e64edf71a2e2018b154a550dab449df2052498203e2fe",
+				"dweb:/ipfs/QmdNenB2WkgwwCCeXyVLBTNJzdSJe8aQNwH8RuW9eKcfiu"
 			]
 		}
 	},
